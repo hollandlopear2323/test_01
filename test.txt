@@ -1,0 +1,7 @@
+<b>bold</b><i>italic</i>
+<ul>
+	<li>test</li>
+	<li>test</li>
+	<li>test</li>
+</ul>
+<script>alert("script ! \n $.parseHTMLメソッドはscript実行しません　\n 引数 keepScriptsをtrueにすると実行します");</script>

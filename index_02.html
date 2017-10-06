@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript">
+   $(window).load(function(e) {
+       new iScroll("wrapper-scroll");
+   });
+</script>
+<style type="text/css" media="all">
+  /* iscrollとは関係ないスタイル */
+  div {
+      margin: 0;
+      padding: 0;
+  }
+  #wrapper {
+      padding: 10px;
+      background-color: #ffaaff;
+  }
+  #wrapper-scroll {
+      height: 100px;
+      background-color: #ffffff;
+  }
+  #layer01 {
+      height: 150px;
+      background-color: #aaffff;
+  }
+  #layer02 {
+      height: 150px;
+      background-color: #ffffaa;
+  }
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="wrapper-scroll"> <!-- wrapper -->
+      <div id="layer01">  <!-- scroller -->
+        <script type="text/javascript">
+           for(var i = 1; i <= 9; i++) {
+             document.write(i + "行目");
+           }
+        </script>
+      </div>
+      <div id="layer02">
+        <script type="text/javascript">
+           for(var i = 1; i <= 9; i++) {
+             document.write(i + "行目");
+           }
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

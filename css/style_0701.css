@@ -1,0 +1,117 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*
+div{
+	color:#fff;
+	width:50px;
+	height:50px;
+	background-color:#09C;
+}
+*/
+div {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+.green {
+  background-color: #9f9;
+}
+
+.yellow {
+  background-color: #dd0;
+}
+
+.blue {
+  background-color: #09c;
+}
+
+b {
+  font-weight: bold;
+}
+
+#div_01 {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #09C;
+  background-position: 2px 5px;
+  background-image: url();
+  background-repeat: no-repeat;
+}
+
+#div_02_01,
+#div_02_02 {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #09C;
+}
+
+#div_02_01.test {
+  height: 100px;
+}

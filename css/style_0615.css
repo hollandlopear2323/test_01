@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+h3 {
+  margin: 0;
+}
+
+#div_wrapper {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.text02 {
+  width: 300px;
+  height: 200px;
+  background-color: #23ac38;
+  position: relative;
+  line-height: 1em;
+  /*子要素にtop:50; margin-top: – (※line-height / 2) ;を指定します。*/
+}
+.text02 > p {
+  position: absolute;
+  top: 50%;
+  margin-top: -4em;
+  /*子要素にtop:50; margin-top: – (※line-height / 2) ;を指定します。*/
+}
+
+.text03 {
+  display: table;
+  width: 400px;
+  height: 400px;
+  background-color: #eb5350;
+}
+.text03 > p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5em;
+  background-color: #eb0350;
+}
+
+.box01 {
+  height: 100%;
+}
+.box01 > p {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #f3c0ab;
+  top: 50%;
+  left: 50%;
+  margin: -75px 0 0 -75px;
+}
+
+.box02_wrapper {
+  display: table;
+}
+
+.box02 {
+  display: table-cell;
+  width: 400px;
+  height: 400px;
+  vertical-align: middle;
+  background-color: #99cfe5;
+  text-align: center;
+}
+
+.box03 {
+  text-align: center;
+  min-width: 410px;
+  height: 100%;
+}
+.box03:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.box03 .box03_unit {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  padding: 10px 15px;
+  background-color: #E7A5C9;
+}
+.box03 .box03_unit > p {
+  text-align: left;
+}

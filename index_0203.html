@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="copyright" content="Shiseido Co., Ltd. All rights reserved." />
+	<meta name="author" content="Shiseido Co., Ltd." />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+	<meta name="format-detection" content="telephone=no" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<title>マイページ | ワタシプラス／資生堂</title>
+  <style type="text/css">
+
+  /*
+  YUI 3.18.1 (build f7e7bcb)
+  Copyright 2014 Yahoo! Inc. All rights reserved.
+  Licensed under the BSD License.
+  http://yuilibrary.com/license/
+  */
+  html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+  body{
+    font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-size: 75.0%;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  div#hana{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  div#hana img{
+    max-width: 70%;
+  }
+
+  ul#banner_list{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+  ul#banner_list li{
+/*
+    float: left;
+    width: 44%;
+*/  
+
+    list-style: none;
+    display: list-item;
+  }            
+
+  ul#banner_list li img{
+  	display: block;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  
+/*
+  ul#banner_list li:nth-child(2n) {
+      margin-left: 6%;
+      text-align: right;
+  }
+  ul#banner_list li:nth-child(2n+1){
+    margin-left: 3%;
+    text-align: left;
+  }
+*/
+
+
+  div.banners img{
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 3px #666;
+    -webkit-box-shadow: 0px 0px 3px #666;
+    max-width: 100%;
+    height: auto;
+  }
+  div.banners a:hover{
+    opacity: 0.65;
+    filter: Alpha(Opacity=65);
+  }
+
+  </style>
+</head>
+<body>
+
+  <div class="banner_area banners">
+    <div id="hana">
+      <a href="https://pages.wp.shiseido.co.jp/Redirect.aspx?EQ=5c591a8916642e730c88996a509deb70b40dd58e891d6159360afb38c70861cfd4222d331af720daf5f501800354232123000720014a2f7737680bd4bbd607d8bf9d86108a663f26c64ef79e40ad42a8cc2131e8269e9d9085b886c69a57fc5118c3d88a9013a8d573ce6190d0c6fa4a42d8ab61ff23391aea1f0ed77c1409d1d7bf72b4e066d14c0b6f6b0df45e1e9b34f32e76d4b45ea5698f8f5717c855cac5db9ad09d9af6de23afdbd12c0ae020a311d0e8a725804b469aa1cffc0e706cbc1cd83681bb3de7ba32525d635c04fac75c1502e2a80f54c4442b7c67772aeb" target="_top"><img src="https://image.wp.shiseido.co.jp/lib/fe891372746d0c7a71/m/1/img16.jpg" /></a>
+    </div>
+    <div class="banners">
+      <ul id="banner_list">
+        <li id="img_1"><a href="https://pages.wp.shiseido.co.jp/Redirect.aspx?EQ=5c591a8916642e730c88996a509deb70b40dd58e891d6159360afb38c70861cfd4222d331af720daf5f501800354232123000720014a2f7737680bd4bbd607d8bf9d86108a663f26c64ef79e40ad42a8cc2131e8269e9d9085b886c69a57fc5118c3d88a9013a8d573ce6190d0c6fa4a42d8ab61ff23391aea1f0ed77c1409d1867b88f302b15e08af6d247530d9b77f94c79254162649e0abc65cc0a0129ec64d20ab2cad63c6444bc8016340ecd7a61619980f8f7effd64cae499a65674ae5978f55f37067587d5e5395621c32e0f9a6e05625ea316721dd0c4919990ed8644409699e108a76574d6b5136481e9b4d904c40cf074b6603213e617d6244d7256004f6db4aa7c140" target="_top"><img src="https://image.wp.shiseido.co.jp/lib/fe891372746d0c7a71/m/1/sp_eis_device.jpg" alt="default"/></a></li>
+        <li id="img_2"><a href="https://pages.wp.shiseido.co.jp/Redirect.aspx?EQ=5c591a8916642e730c88996a509deb70b40dd58e891d6159360afb38c70861cfd4222d331af720daf5f501800354232123000720014a2f7737680bd4bbd607d8bf9d86108a663f26c64ef79e40ad42a8cc2131e8269e9d9085b886c69a57fc5118c3d88a9013a8d573ce6190d0c6fa4a42d8ab61ff23391aea1f0ed77c1409d170624f72ba1fe6041fea8b9a3069ff942a4a263f141742fcba5f24e9041f36a4cb7f07cbfd858a48d4488d114f7742ad31384ebe8ea338941770903fd4939465403f6d3b448ed375a990895058677d5f833841435041e6f41829962d68182b56b85334159f481890989d3024fd6ed98deb090ecf8425b188" target="_top"><img src="https://image.wp.shiseido.co.jp/lib/fe891372746d0c7a71/m/1/sp_mq_pm.jpg" alt="default"/></a></li>
+      </ul>
+    </div>
+  </div>
+
+<script type="text/javascript">
+    window.addEventListener("load", postSize, false);
+    function postSize(e){
+        var target = parent.postMessage ? parent : (parent.document.postMessage ? parent.document : undefined);
+        if (typeof target != "undefined" && document.body.scrollHeight){
+					target.postMessage($("html").height(), "*");
+				}
+    }
+
+</script>
+
+
+<script type="text/javascript" src="https://pages.wp.shiseido.co.jp/Script/HttpRequest.js"></script>
+<script type="text/javascript" src="https://pages.wp.shiseido.co.jp/Script/pageTracking.js"></script>
+<script type="text/javascript">
+	absoluteBaseUrl = "https://pages.wp.shiseido.co.jp/";
+	SaveAnalyticData(7219874, 'd8ff147f-ee04-42b7-bd46-1508efca264f', '4c333491-9bfd-4855-bc9a-48a4b94a5abb'); 
+</script>
+
+
+</body>
+</html>

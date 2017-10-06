@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul.flexbox {
+  display: flex;
+  width: 500px;
+}
+
+ul.flexbox li {
+  width: 99px;
+  list-style-type: none;
+  background: black;
+  border-left: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+/*--http://hatsuka.info/coding/flexbox_01   http://codepen.io/matsui/pen/YXLRXv --*/
+section {
+  margin: 10px 0;
+  padding: 10px;
+  background: #EEE;
+  border-radius: 4px;
+}
+
+h1, p {
+  margin: 0 10px 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  /*	    -webkit-flex-flow:row-reverse wrap-reverse;/*--- safari（PC）用 ---*/
+}
+ul li {
+  margin: 0 10px 10px;
+  padding: 5px 10px;
+  display: block;
+  color: #FFF;
+  text-align: center;
+  background: #000;
+  border-radius: 4px;
+}
+
+.row {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.row-reverse {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.column-reverse {
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}

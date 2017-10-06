@@ -1,0 +1,179 @@
+@import 'compass';
+@import 'compass/reset';
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+section{
+	width: 500px;
+	margin: 100px auto 0;
+}
+
+p{
+	margin: 0;
+	padding: 0 40px;
+	text-align: center;
+	float: left;
+}
+.one{
+	&>blockquote:before {
+			content: open-quote;
+			font-size: 24pt;
+			text-align: center;
+			line-height: 42px;
+			color: #fff;
+			background: #ddd;
+			float: left;
+			position: relative;
+			top: 30px;
+			border-radius: 12.5px;
+	 
+			/** define it as a block element **/
+			display: block;
+			height: 25px;
+			width: 25px; 
+	}
+	&>blockquote:after {
+			content: close-quote;
+			font-size: 24pt;
+			text-align: center;
+			line-height: 42px;
+			color: #fff;
+			background: #ddd;
+			float: right;
+			position: relative;
+			bottom: 40px;
+			border-radius: 12.5px;
+	 
+			/** define it as a block element **/
+			display: block;
+			height: 25px;
+			width: 25px;		
+	}
+
+}
+
+
+
+.two{
+	&>blockquote:before{
+    content: " ";
+    font-size: 24pt;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    float: left;
+    position: relative;
+    top: 30px;
+    border-radius: 25px;
+ 
+    background: url(../img/quotationmark.png) -3px -3px #ddd;
+ 
+    display: block;
+    height: 25px;
+    width: 25px;	
+	}
+	&>blockquote:after{
+    content: " ";
+    font-size: 24pt;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    float: right;
+    position: relative;
+    bottom: 40px;
+    border-radius: 25px;
+ 
+    background: url(../img/quotationmark.png) -1px -32px #ddd;
+ 
+    display: block;
+    height: 25px;
+    width: 25px;	
+	}
+}
+
+
+.general {
+	width: 300px;
+	min-height: 300px;
+	background: #222;
+	float: left;
+	margin: 0 0 40px 0;
+	-webkit-transition: background .4s linear;
+	-moz-transition: background .4s linear;
+	-o-transition: background .4s linear;
+	-ms-transition: background .4s linear;
+
+	p{
+		text-align: center;
+		font-family: Arial, sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		clear: both;
+	}
+	p.fluidity {
+    padding: 50px 0 0 0;
+    position: relative;
+    z-index: 30;
+		a{
+			color: lightblue;
+			-webkit-transition: color .4s linear;	
+		}
+	}
+		
+}
+.general.two {
+    border: solid 6px #fff;
+    position: relative;
+    z-index: 1;
+}
+ 
+.general.two:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    border: solid 6px #888;
+    width: 312px;
+    padding-bottom: 12px;
+    min-height: 100%;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

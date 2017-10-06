@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>スマホサイトで上下固定バーを実現するデモページ</title>
+
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript">
+	var myScroll;
+	function loaded() {
+		myScroll = new iScroll('wrapper');
+	}
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+</script>
+
+
+
+
+<style type="text/css" media="all">
+body,ul,li {
+	padding:0;
+	margin:0;
+	border:0;
+}
+body {
+	font-size:12px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	font-family:helvetica;
+}
+h1{
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+#header {
+	position:absolute; z-index:2;
+	top:0; left:0;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	background-color:#d51875;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fe96c9), color-stop(0.05, #d51875), color-stop(1, #7b0a2e));
+	background-image:-moz-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+	background-image:-o-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+	padding:0;
+	color:#eee;
+	font-size:20px;
+	text-align:center;
+}
+#header a {
+	color:#f3f3f3;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+}
+#footer {
+	position:absolute; z-index:2;
+	bottom:0; left:0;
+	width:100%;
+	height:48px;
+	background-color:#222;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+	background-image:-moz-linear-gradient(top, #999, #666 2%, #222);
+	background-image:-o-linear-gradient(top, #999, #666 2%, #222);
+	padding:0;
+	border-top:1px solid #444;
+}
+#wrapper {
+	position:absolute; z-index:1;
+	top:45px; bottom:48px; left:0;
+	width:100%;
+	background:#aaa;
+	overflow:auto;
+}
+#scroller {
+	position:absolute; z-index:1;
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	padding:0;
+}
+#scroller ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align:left;
+}
+#scroller li {
+	padding:0 10px;
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #fff;
+	background-color:#fafafa;
+	font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+  <div id="header"><h1>スマホのブラウザで見ても上下固定バーを表示</h1></div>
+  <div id="wrapper">
+  
+    <div id="scroller">
+      <ul id="thelist">
+        <li>1.CSS</li>
+        <li>2.Facebook</li>
+        <li>3.HTML5</li>
+        <li>4.JavaScript</li>
+        <li>5.Ajax</li>
+        <li>6.jQuery</li>
+        <li>7.PHP</li>
+        <li>8.Smarty</li>
+        <li>9.SEO</li>
+        <li>10.WordPress</li>
+        <li>11.その他</li>
+        <li>12.スマートフォン</li>
+        <li>13.Android</li>
+        <li>14.iPhone</li>
+        <li>15.WEBエンジニア</li>
+        <li>16.ファインプレー</li>
+        <li>17.BLINDER HIDDEN</li>
+        <li>18.CSS</li>
+        <li>19.Facebook</li>
+        <li>20.HTML5</li>
+        <li>21.JavaScript</li>
+        <li>22.Ajax</li>
+        <li>23.jQuery</li>
+        <li>24.PHP</li>
+        <li>25.Smarty</li>
+        <li>26.SEO</li>
+        <li>27.WordPress</li>
+        <li>28.その他</li>
+        <li>29.スマートフォン</li>
+        <li>30.Android</li>
+        <li>31.iPhone</li>
+        <li>32.WEBエンジニア</li>
+        <li>33.ファインプレー</li>
+        <li>34.BLINDER HIDDEN</li>
+        <li>35.CSS</li>
+        <li>36.Facebook</li>
+        <li>37.HTML5</li>
+        <li>38.JavaScript</li>
+        <li>39.Ajax</li>
+        <li>40.jQuery</li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+</body>
+</html>

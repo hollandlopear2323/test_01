@@ -1,0 +1,38 @@
+@import 'compass';
+@import 'compass/reset';
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+#div_01{
+	width:50px;
+	height:50px;
+	background-color:#09c;
+}
+
+#blue {
+	width:300px;
+	height:300px;
+	background-color:#36F;
+}
+#red {
+	width:200px;
+	height:200px;
+	background-color:#F36;
+}
+#green {
+	width:100px;
+	height:100px;
+	background-color:#6f3;
+}
+
+#div_02{
+	background-color:#ddd;
+	width:600px;
+	height:1000px;
+	background-repeat: no-repeat;
+}

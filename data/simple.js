@@ -1,0 +1,1 @@
+$("div#div_script").css("background-color","#fcf");

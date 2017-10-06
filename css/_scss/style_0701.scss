@@ -1,0 +1,72 @@
+@import 'compass';
+@import 'compass/reset';
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*
+div{
+	color:#fff;
+	width:50px;
+	height:50px;
+	background-color:#09C;
+}
+*/
+div{
+	color:#fff;
+	width:50px;
+	height:50px;
+}
+.green{
+	background-color:#9f9;
+}
+.yellow{
+	background-color:#dd0;
+}
+.blue{
+	background-color:#09c;
+}
+
+b{
+	font-weight: bold;
+}
+
+
+
+#div_01{
+	margin:5px;
+	width:50px;
+	height:50px;
+	color:#fff;
+	background-color:#09C;
+	background-position: 2px 5px; 
+	background-image: url(); 
+	background-repeat: no-repeat; 
+}
+
+#div_02_01,
+#div_02_02{
+	margin:10px;
+	width:50px;
+	height:50px;
+	color:#fff;
+	background-color:#09C;
+}
+
+#div_02_01.test{
+	height:100px;
+}
+
+
+
+
+
+
+
+
+
+

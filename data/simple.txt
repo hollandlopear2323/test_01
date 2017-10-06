@@ -1,0 +1,9 @@
+サーバ上に配置した<br/>
+シンプルなテキストデータです<br/>
+<span id="test">このテキストはid属性がtestのspan要素に囲まれています。</span>
+
+
+<span id="age">18</span>
+<span id="name">太郎</span>
+<span id="address">東京</span>
+
